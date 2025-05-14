@@ -26,8 +26,8 @@ const Hero = () => {
               View My Projects
               <ArrowRight size={18} className="ml-2" />
             </a>
-            <a href="/Rakshitha_Resume.pdf" className="btn-outline">
-              Download CV
+            <a href="/Pics/Rakshitha-Chennala-Resume.pdf" className="btn-outline">
+              Download Resume
               <Download size={18} className="ml-2" />
             </a>
           </div>
@@ -36,7 +36,7 @@ const Hero = () => {
         <div className="flex-shrink-0 relative animate-fade-in">
           <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-portfolio-accent/30 hover-glow transition-all duration-300">
             <img 
-              src="/lovable-uploads/52f77a02-4c0c-4403-98c2-edecca3bc8f5.png" 
+              src="Pics\me1.jpg" 
               alt="Rakshitha Chennala"
               className="w-full h-full object-cover"
             />

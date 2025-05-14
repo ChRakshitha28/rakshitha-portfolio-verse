@@ -12,12 +12,24 @@ const Footer = () => {
         </div>
         
         <div className="flex justify-center space-x-6 mb-6">
-          <a href="#" className="text-gray-400 hover:text-portfolio-accent transition-colors duration-300">
-            GitHub
-          </a>
-          <a href="#" className="text-gray-400 hover:text-portfolio-accent transition-colors duration-300">
-            LinkedIn
-          </a>
+<a
+  href="https://github.com/ChRakshitha28"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray-400 hover:text-portfolio-accent"
+>
+  GitHub
+</a>
+
+<a
+  href="https://linkedin.com/in/chennala-rakshitha-1b22812a5"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray-400 hover:text-portfolio-accent"
+>
+  LinkedIn
+</a>
+
           <a href="mailto:chrakshitha28@gmail.com" className="text-gray-400 hover:text-portfolio-accent transition-colors duration-300">
             Email
           </a>

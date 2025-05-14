@@ -8,25 +8,22 @@ const Projects = () => {
     {
       title: "Automated Resume Builder",
       description: "A web app built using HTML/CSS/JS that generates a professional resume in real-time with features like live preview, form validation, and PDF download.",
-      image: "/lovable-uploads/d46996d4-1038-4df9-9898-e494c3a5e9dd.png",
       tags: ["HTML", "CSS", "JavaScript", "PDF Generation"],
-      github: "#",
+      github: "https://github.com/ChRakshitha28/Automated-Resume-Bulider",
       demo: "#",
-    }
+    },
      {
       title: "Hospital Management System",
       description: "A comprehensive system for patient registration, doctor scheduling, and billing. Designed with a user-friendly interface to improve hospital administration.",
-      image: "/lovable-uploads/d46996d4-1038-4df9-9898-e494c3a5e9dd.png", 
-      tags: ["PostgreSQL", "React.js"],
-      github: "#",
+      tags: ["PostgreSQL", "React.js","Express.js","Node.js"],
+      github: "https://github.com/ChRakshitha28/Hospital-Management-System",
       demo: "#",
     },
      {
       title: "AI ChatBot",
       description: "A web app that processes dynamic user input, provides intelligent responses, and ensures a real-time chat experience. Focus on API integration, backend handling, and UI responsiveness.",
-      image: "/lovable-uploads/d46996d4-1038-4df9-9898-e494c3a5e9dd.png",
-      tags: ["React.js", "Gemini API", "Animations"],
-      github: "#",
+      tags: ["React.js", "Gemini API", "Node.js","Express.js"],
+      github: "https://github.com/ChRakshitha28/AI-ChatBot",
       demo: "#",
     }
   ];
