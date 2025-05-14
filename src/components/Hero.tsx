@@ -8,8 +8,8 @@ const Hero = () => {
       className="relative min-h-screen flex items-center pt-16 overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-40 left-10 w-72 h-72 bg-portfolio-accent/20 rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-40 right-10 w-80 h-80 bg-portfolio-secondary/20 rounded-full filter blur-3xl"></div>
+        <div className="absolute top-40 left-10 w-72 h-72 bg-portfolio-accent/10 rounded-full filter blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-40 right-10 w-80 h-80 bg-portfolio-secondary/10 rounded-full filter blur-3xl animate-pulse-slow"></div>
       </div>
       
       <div className="section-container relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
@@ -44,7 +44,7 @@ const Hero = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-portfolio-accent rounded-full flex items-center justify-center text-sm font-semibold">CS Student</div>
+          <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-portfolio-accent text-black rounded-full flex items-center justify-center text-sm font-semibold animate-glow">CS Student</div>
         </div>
       </div>
     </section>

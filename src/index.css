@@ -71,7 +71,7 @@
   }
   
   .btn-primary {
-    @apply bg-portfolio-accent hover:bg-portfolio-accent/90 text-white font-medium py-3 px-6 rounded-md transition-all duration-300 inline-flex items-center justify-center;
+    @apply bg-portfolio-accent hover:bg-portfolio-accent/80 text-black font-medium py-3 px-6 rounded-md transition-all duration-300 inline-flex items-center justify-center;
   }
   
   .btn-outline {
@@ -83,14 +83,75 @@
   }
   
   .card {
-    @apply bg-portfolio-gray rounded-lg overflow-hidden hover:shadow-lg hover:shadow-portfolio-accent/5 transition-all duration-300;
+    @apply bg-portfolio-gray rounded-lg overflow-hidden hover:shadow-lg hover:shadow-portfolio-accent/20 transition-all duration-300;
   }
   
   .skill-tag {
-    @apply bg-portfolio-gray px-4 py-2 rounded-md text-sm inline-block m-1;
+    @apply bg-[#121a29] px-4 py-2 rounded-md text-sm inline-block m-1 border border-portfolio-accent/30 text-white/90;
+  }
+  
+  .skill-card {
+    @apply bg-[#121a29] p-6 rounded-lg border border-[#1e2a45] transition-all duration-300;
+  }
+  
+  .skill-card:hover {
+    @apply border-portfolio-accent/50 shadow-md shadow-portfolio-accent/10;
+  }
+  
+  .tech-pill {
+    @apply bg-[#1a2234] text-portfolio-accent/90 px-3 py-1 rounded-full text-xs border border-portfolio-accent/20 inline-flex m-1;
   }
 }
 
 .hover-glow:hover {
-  box-shadow: 0 0 15px rgba(58, 134, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.project-card {
+  @apply bg-[#121a29] rounded-xl overflow-hidden border border-[#1e2a45] transition-all duration-300;
+}
+
+.project-card:hover {
+  @apply border-portfolio-accent/50 shadow-lg shadow-portfolio-accent/10 transform -translate-y-1;
+}
+
+.project-image-overlay {
+  @apply absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0f1a]/90 opacity-0 transition-opacity duration-300;
+}
+
+.project-card:hover .project-image-overlay {
+  @apply opacity-100;
+}
+
+.project-actions {
+  @apply absolute top-4 right-4 flex space-x-2 opacity-0 transition-opacity duration-300;
+}
+
+.project-card:hover .project-actions {
+  @apply opacity-100;
+}
+
+.action-button {
+  @apply bg-[#121a29]/80 p-2 rounded-full border border-portfolio-accent/30 text-white/90 hover:bg-portfolio-accent/20 transition-all duration-300;
+}
+
+.category-tab {
+  @apply px-6 py-3 rounded-md text-white/80 hover:text-white transition-all duration-300;
+}
+
+.category-tab.active {
+  @apply bg-portfolio-accent/20 text-portfolio-accent font-medium;
+}
+
+.education-timeline {
+  @apply relative pl-8 border-l-2 border-portfolio-accent/30 py-2;
+}
+
+.education-timeline::before {
+  content: '';
+  @apply absolute -left-[9px] top-0 w-4 h-4 bg-portfolio-accent rounded-full;
+}
+
+.education-timeline:hover::before {
+  @apply animate-pulse;
 }

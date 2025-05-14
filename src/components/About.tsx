@@ -1,4 +1,6 @@
 
+import { motion } from "framer-motion";
+
 const About = () => {
   const education = [
     {
@@ -23,7 +25,7 @@ const About = () => {
       <div className="section-container">
         <h2 className="section-title">About Me</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="animate-slide-up">
             <p className="text-gray-300 mb-6 leading-relaxed">
               I'm a third-year Computer Science undergraduate with a strong passion for technology and continuous learning. I thrive in challenging environments and am driven by a self-motivated, can-do attitude.
@@ -34,13 +36,21 @@ const About = () => {
           </div>
           
           <div className="animate-slide-up [animation-delay:200ms]">
-            <h3 className="text-xl font-bold mb-4 text-portfolio-accent">Education</h3>
-            <div className="space-y-6">
+            <h3 className="text-xl font-bold mb-6 flex items-center">
+              <span className="bg-portfolio-accent/20 text-portfolio-accent p-2 rounded-md mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </span>
+              Education
+            </h3>
+            <div className="space-y-6 mt-4">
               {education.map((edu, index) => (
-                <div key={index} className="border-l-2 border-portfolio-accent pl-4 py-2">
-                  <h4 className="text-lg font-medium">{edu.degree}</h4>
-                  <p className="text-gray-400">{edu.institution}</p>
-                  <p className="text-sm text-gray-500">{edu.years}</p>
+                <div key={index} className="education-timeline">
+                  <h4 className="text-lg font-medium text-portfolio-accent">{edu.degree}</h4>
+                  <p className="text-gray-300">{edu.institution}</p>
+                  <p className="text-sm text-gray-400">{edu.years}</p>
                 </div>
               ))}
             </div>
