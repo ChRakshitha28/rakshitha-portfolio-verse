@@ -6,19 +6,25 @@ const About = () => {
   const education = [
     {
       degree: "B.Tech in Computer Science",
-      institution: "CMR Engineering College, Hyderabad",
-      years: "2022–2026 (Expected)"
+      institution: "CMR Engineering College",
+      years: "2022–2026",
+      description:
+        "Focusing on core computer science subjects, including data structures, web development, and software engineering. Actively involved in projects and tech communities.",
     },
     {
       degree: "Class 12",
       institution: "Alphores Junior College",
-      years: "2020–2022"
+      years: "2020–2022",
+      description:
+        "Completed intermediate education with emphasis on Mathematics, Physics, and Chemistry under the Telangana State Board.",
     },
     {
       degree: "SSC",
       institution: "Tawakkal High School",
-      years: "2020"
-    }
+      years: "2020",
+      description:
+        "Achieved excellent academic results and built a strong foundation in all subjects.",
+    },
   ];
 
   return (

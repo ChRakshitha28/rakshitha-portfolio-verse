@@ -98,7 +98,9 @@ const Contact = () => {
                   <Linkedin className="w-6 h-6 text-portfolio-accent mr-4 mt-1" />
                   <div>
                     <h4 className="font-medium">LinkedIn</h4>
-                    <a href="#" className="text-gray-400 hover:text-portfolio-accent">linkedin.com/in/rakshitha-chennala</a>
+<a href="https://linkedin.com/in/chennala-rakshitha-1b22812a5" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-portfolio-accent">
+  linkedin.com/in/chennala-rakshitha-1b22812a5
+</a>
                   </div>
                 </div>
                 
@@ -106,7 +108,9 @@ const Contact = () => {
                   <Github className="w-6 h-6 text-portfolio-accent mr-4 mt-1" />
                   <div>
                     <h4 className="font-medium">GitHub</h4>
-                    <a href="#" className="text-gray-400 hover:text-portfolio-accent">github.com/rakshitha-chennala</a>
+<a href="https://github.com/ChRakshitha28" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-portfolio-accent">
+  github.com/ChRakshitha28
+</a>
                   </div>
                 </div>
               </div>

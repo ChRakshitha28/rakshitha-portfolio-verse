@@ -26,10 +26,7 @@ const Hero = () => {
               View My Projects
               <ArrowRight size={18} className="ml-2" />
             </a>
-            <a href="#contact" className="btn-outline">
-              Get in Touch
-            </a>
-            <a href="#" className="btn-outline">
+            <a href="/Rakshitha_Resume.pdf" className="btn-outline">
               Download CV
               <Download size={18} className="ml-2" />
             </a>

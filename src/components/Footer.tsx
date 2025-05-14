@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 text-center">
         <div className="mb-4">
           <a href="#home" className="text-xl font-bold font-poppins">
-            Rakshitha<span className="text-portfolio-accent">.</span>
+            Rakshitha Chennala<span className="text-portfolio-accent">.</span>
           </a>
         </div>
         

@@ -6,7 +6,7 @@ const Skills = () => {
     {
       title: "Programming",
       icon: <Code className="w-8 h-8 text-portfolio-accent" />,
-      skills: ["Java (DSA)", "JavaScript", "TypeScript", "C", "C++"]
+      skills: ["Java (DSA)", "JavaScript", "C", "C++"]
     },
     {
       title: "Frontend",
