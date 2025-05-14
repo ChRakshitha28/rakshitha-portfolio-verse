@@ -11,12 +11,12 @@ const Skills = () => {
     {
       title: "Frontend",
       icon: <FileCode className="w-8 h-8 text-portfolio-accent" />,
-      skills: ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "Tailwind CSS"]
+      skills: ["HTML", "CSS", "JavaScript", "React.js"]
     },
     {
       title: "Backend",
       icon: <Server className="w-8 h-8 text-portfolio-accent" />,
-      skills: ["Node.js", "Express.js", "RESTful APIs"]
+      skills: ["Node.js"]
     },
     {
       title: "Database",
@@ -26,7 +26,7 @@ const Skills = () => {
     {
       title: "Tools",
       icon: <Github className="w-8 h-8 text-portfolio-accent" />,
-      skills: ["Git", "GitHub", "VS Code", "Postman"]
+      skills: ["Git", "GitHub", "VS Code"]
     },
     {
       title: "Currently Learning",

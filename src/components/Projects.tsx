@@ -1,6 +1,7 @@
 
 import { ExternalLink, Github, Hospital, FileCode, Code } from "lucide-react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -16,7 +17,7 @@ const Projects = () => {
       title: "Hospital Management System",
       description: "A comprehensive system for patient registration, doctor scheduling, and billing. Designed with a user-friendly interface to improve hospital administration.",
       image: "/lovable-uploads/d46996d4-1038-4df9-9898-e494c3a5e9dd.png", 
-      tags: ["PostgreSQL", "Express.js", "React.js", "Node.js"],
+      tags: ["PostgreSQL", "React.js"],
       github: "#",
       demo: "#",
       categories: ["web"]
@@ -25,7 +26,7 @@ const Projects = () => {
       title: "AI ChatBot",
       description: "A web app that processes dynamic user input, provides intelligent responses, and ensures a real-time chat experience. Focus on API integration, backend handling, and UI responsiveness.",
       image: "/lovable-uploads/d46996d4-1038-4df9-9898-e494c3a5e9dd.png",
-      tags: ["React.js", "Node.js", "Express.js", "Gemini API", "TailwindCSS"],
+      tags: ["React.js", "Gemini API"],
       github: "#",
       demo: "#",
       categories: ["web", "ai"]
@@ -72,10 +73,13 @@ const Projects = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project, index) => (
-            <div 
+            <motion.div 
               key={index} 
-              className="project-card animate-slide-up"
-              style={{ animationDelay: `${index * 150}ms` }}
+              className="project-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
             >
               <div className="relative h-48 bg-gradient-to-br from-[#121a29] to-portfolio-darker overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -105,7 +109,7 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
