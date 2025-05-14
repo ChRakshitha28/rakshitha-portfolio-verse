@@ -1,5 +1,5 @@
 
-import { Code, Database, React, FileCode, Git, Github, Aws, Devops } from "lucide-react";
+import { Code, Database, FileCode, Github, Cloud, Server } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
@@ -10,12 +10,12 @@ const Skills = () => {
     },
     {
       title: "Frontend",
-      icon: <React className="w-8 h-8 text-portfolio-accent" />,
+      icon: <FileCode className="w-8 h-8 text-portfolio-accent" />,
       skills: ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "Tailwind CSS"]
     },
     {
       title: "Backend",
-      icon: <FileCode className="w-8 h-8 text-portfolio-accent" />,
+      icon: <Server className="w-8 h-8 text-portfolio-accent" />,
       skills: ["Node.js", "Express.js", "RESTful APIs"]
     },
     {
@@ -25,12 +25,12 @@ const Skills = () => {
     },
     {
       title: "Tools",
-      icon: <Git className="w-8 h-8 text-portfolio-accent" />,
+      icon: <Github className="w-8 h-8 text-portfolio-accent" />,
       skills: ["Git", "GitHub", "VS Code", "Postman"]
     },
     {
       title: "Currently Learning",
-      icon: <Aws className="w-8 h-8 text-portfolio-accent" />,
+      icon: <Cloud className="w-8 h-8 text-portfolio-accent" />,
       skills: ["AWS", "DevOps", "Cloud Computing"]
     }
   ];

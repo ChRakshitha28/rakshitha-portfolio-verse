@@ -1,5 +1,5 @@
 
-import { ExternalLink, Github, Hospital, Ai, FileCode } from "lucide-react";
+import { ExternalLink, Github, Hospital, FileCode, Code } from "lucide-react";
 import { useState } from "react";
 
 const Projects = () => {
@@ -47,7 +47,7 @@ const Projects = () => {
 
   const getProjectIcon = (title) => {
     if (title.includes("Hospital")) return <Hospital className="w-10 h-10" />;
-    if (title.includes("AI") || title.includes("Chat")) return <Ai className="w-10 h-10" />;
+    if (title.includes("AI") || title.includes("Chat")) return <Code className="w-10 h-10" />;
     return <FileCode className="w-10 h-10" />;
   };
 
