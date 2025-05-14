@@ -1,17 +1,8 @@
 
 import { ExternalLink, Github, Hospital, FileCode, Code } from "lucide-react";
-import { useState } from "react";
 import { motion } from "framer-motion";
 
 const Projects = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
-  
-  const categories = [
-    { id: "all", label: "All Projects" },
-    { id: "web", label: "Web Apps" },
-    { id: "ai", label: "AI Projects" }
-  ];
-  
   const projects = [
     {
       title: "Hospital Management System",
@@ -20,16 +11,14 @@ const Projects = () => {
       tags: ["PostgreSQL", "React.js"],
       github: "#",
       demo: "#",
-      categories: ["web"]
     },
     {
       title: "AI ChatBot",
       description: "A web app that processes dynamic user input, provides intelligent responses, and ensures a real-time chat experience. Focus on API integration, backend handling, and UI responsiveness.",
       image: "/lovable-uploads/d46996d4-1038-4df9-9898-e494c3a5e9dd.png",
-      tags: ["React.js", "Gemini API"],
+      tags: ["React.js", "Gemini API", "Animations"],
       github: "#",
       demo: "#",
-      categories: ["web", "ai"]
     },
     {
       title: "Automated Resume Builder",
@@ -38,13 +27,8 @@ const Projects = () => {
       tags: ["HTML", "CSS", "JavaScript", "PDF Generation"],
       github: "#",
       demo: "#",
-      categories: ["web"]
     }
   ];
-  
-  const filteredProjects = activeCategory === "all" 
-    ? projects 
-    : projects.filter(project => project.categories.includes(activeCategory));
 
   const getProjectIcon = (title) => {
     if (title.includes("Hospital")) return <Hospital className="w-10 h-10" />;
@@ -57,22 +41,8 @@ const Projects = () => {
       <div className="section-container">
         <h2 className="section-title">Recent Projects</h2>
         
-        <div className="flex justify-center mb-8">
-          <div className="inline-flex bg-[#121a29] p-1.5 rounded-lg">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                className={`category-tab ${activeCategory === category.id ? 'active' : ''}`}
-                onClick={() => setActiveCategory(category.id)}
-              >
-                {category.label}
-              </button>
-            ))}
-          </div>
-        </div>
-        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project, index) => (
+          {projects.map((project, index) => (
             <motion.div 
               key={index} 
               className="project-card"

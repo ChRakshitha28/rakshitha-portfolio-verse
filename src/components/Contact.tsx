@@ -27,7 +27,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-16">
       <div className="section-container">
-        <h2 className="section-title">Get In Touch</h2>
+        <h2 className="section-title">Contact Me</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="animate-slide-up">
