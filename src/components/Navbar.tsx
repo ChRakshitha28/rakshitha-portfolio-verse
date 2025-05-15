@@ -35,7 +35,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#home" className="text-xl font-bold font-poppins">
-          Rakshitha<span className="text-portfolio-accent">.</span>
+          Rakshitha<span className="text-portfolio-accent"></span>
         </a>
 
         {/* Desktop Navigation */}
