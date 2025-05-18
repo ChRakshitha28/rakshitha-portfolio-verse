@@ -26,10 +26,15 @@ const Hero = () => {
               View My Projects
               <ArrowRight size={18} className="ml-2" />
             </a>
-            <a href="/Pics/Rakshitha-Chennala-Resume.pdf" className="btn-outline" download>
-              Download Resume
-              <Download size={18} className="ml-2" />
-              </a>
+            <a 
+              href="/rakshitha-portfolio-verse/Pics/Rakshitha-Chennala-Resume.pdf"
+              className="btn-outline"
+              download
+            >
+            Download Resume
+            <Download size={18} className="ml-2" />
+          </a>
+
           </div>
         </div>
 
