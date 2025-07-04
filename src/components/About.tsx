@@ -38,8 +38,7 @@ const About = () => {
             transition={{ duration: 0.5 }}
           >
             <p className="text-gray-300 mb-6 leading-relaxed">
-              I'm a third-year Computer Science undergraduate with a strong passion for technology and continuous learning. I thrive in challenging environments and am driven by a self-motivated, can-do attitude.
-            </p>
+              I’m a Computer Science undergraduate with a strong passion for technology and a commitment to continuous learning. I thrive in dynamic, challenging environments and am driven by a proactive mindset and a can-do attitude.            </p>
             <p className="text-gray-300 mb-6 leading-relaxed">
               As an avid reader and problem-solver, I constantly seek opportunities to grow, enhance my technical skills, and contribute meaningfully to impactful projects. I'm especially enthusiastic about learning new tools and technologies that align with my interests and career goals.
             </p>
